@@ -2,8 +2,8 @@ name: Deploy to backend
 on:
   push:
     branches:[ main ]
-jobs:
-  build:
+ jobs:
+   build:
     runs-on:ubuntu-latest
     steps:
     - name: Checkout the code
@@ -22,4 +22,4 @@ jobs:
       file: ./Docker/Dockerfile.backend
       push:true
       tags: 1606adarsh/todo-app-backend.${{github.sha}}
-      
+
