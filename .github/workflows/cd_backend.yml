@@ -18,8 +18,8 @@ jobs:
      - name : Build and push
        uses : docker/build-push-action@v4
        with:
-       context: .
-       file: ./Docker/Dockerfile.backend
-       push: true
-       tags: 1606adarsh/todo-app-backend.${{github.sha}}
+        context: .
+        file: ./Docker/Dockerfile.backend
+        push: true
+        tags: 1606adarsh/todo-app-backend.${{github.sha}}
 
