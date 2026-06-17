@@ -15,9 +15,9 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
-    -name: Docker build and push
-     uses: docker/build-push-action@v7
-     with:
+    - name: Docker build and push
+      uses: docker/build-push-action@v7
+      with:
        context: .
        file: ./Docker/Dockerfile.frontend
        push: true
