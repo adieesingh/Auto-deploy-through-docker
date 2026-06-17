@@ -11,7 +11,7 @@ jobs:
 
      - name : Login the Docker
        uses: docker/login-action@v2
-       with
+       with :
        username : ${{secerts.DOCKERHUB_USERNAME}}
        password : ${{secerts.DOCKERHUB_PASSWORD}}
 
