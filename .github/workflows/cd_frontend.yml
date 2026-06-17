@@ -18,9 +18,9 @@ jobs:
     - name: Docker build and push
       uses: docker/build-push-action@v7
       with:
-       context: .
-       file: ./Docker/Dockerfile.frontend
-       push: true
-       tags: adarsh1606/todo-app-frontend.${{github.sha}}
+        context: .
+        file: ./Docker/Dockerfile.frontend
+        push: true
+        tags: adarsh1606/todo-app-frontend.${{github.sha}}
 
        
